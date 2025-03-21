@@ -7,8 +7,8 @@ from collections import OrderedDict
 
 
 CONFIG = {
-    "outDir": "export",
-    "sym": r"[^a-zA-Z0-9_.-]",
+    "outDir": "",
+    "sym": r'[\\/*?:"<>|]',
     "error": {"msg": "ERROR: {}", "timeout": 8000},
     "done": {"msg": "DONE: {}", "timeout": 5000},
     "delimiters": OrderedDict((("assign", "="), ("separator", ","))),  # yapf: disable
